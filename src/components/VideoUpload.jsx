@@ -9,4 +9,6 @@ function VideoUpload() {
   );
 }
 
+VideoUpload.propTypes = {};
+
 export default VideoUpload;
