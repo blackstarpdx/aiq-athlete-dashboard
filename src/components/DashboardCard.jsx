@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function DashboardCard({ title, value }) {
   return (
@@ -8,5 +9,15 @@ function DashboardCard({ title, value }) {
     </div>
   );
 }
+
+DashboardCard.propTypes = {
+  title: PropTypes.string,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+};
+
+DashboardCard.defaultProps = {
+  title: '',
+  value: '',
+};
 
 export default DashboardCard;
